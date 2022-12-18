@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridbox{
+    display: grid;
+   
+}
+.gb-1{
+    height: 50px;
+    background-color: aqua;
+    border: 2px solid ;
+    border-radius: 10px;
+   grid-column-start: 1;
+   grid-column-end: 9;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.gb-2{
+    height: 50px;
+    background-color: rgb(255, 0, 8);
+    border: 2px solid ;
+    border-radius: 10px;
+   grid-column-start: 1;
+   grid-column-end: 5;
+   text-align: center;
+   margin-right: 5px;
+}
+.gb-3{
+    height: 50px;
+    background-color: rgb(255, 221, 0);
+    border: 2px solid ;
+    border-radius: 10px;
+   grid-column-start: 5;
+   grid-column-end: 9;
+   text-align: center;
+   margin-left: 5px;
+}
+.psudo-1::first-line{
+     font-weight: bolder;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: darkgoldenrod;
+}
+    </style>
+</head>
+<body>
+    <h3>Show implementation of transition</h3>
+        <pre>            
+        transition: ease-in;
+        transition-delay: 2s;
+        transition-duration: 5s;
+        transition-timing-function: linear;
+        transition-property: all;   
+        </pre>
+
+
+        <h3>Show implementation of transformation</h3>
+        <pre>
+        transform: rotate(360deg);
+        transform: scale(1.5);
+        transform: skewX(250px);
+        transform: skewY(250px);
+        transform: translateX(1400px);
+        transform: translateY(250px);
+    </pre>
+
+    <h3>Show implementation of grid</h3>
+    <div class="gridbox">
+        <div class="gb-1">grid column start 1 to end 9</div>
+        <div class="gb-2">grid column start 1 to end 5</div>
+        <div class="gb-3">grid column start 5 to end 9</div>
+    </div>
+
+
+    <h3>What are CSS combinators </h3>
+ 
+        <ul>
+            <li>descendant selector(space)</li>
+            this selector mactch all elements which are placed in the specified element
+            <li>child selectoe(>)</li>
+            this child selector will select only the children of an specified element
+            <li>adjucent sibling selctor(+)</li>
+            this selector selects the element next element of and specified element
+            <li>general sibling selector(~)</li>
+            this selector is allow the elements which are placed after the specified element .it dose't allow the previoue element of a specified element
+        </ul>
+  
+
+        <h3>What are pseudo selectors in CSS</h3>
+        <p>a keyword added to a selector that specifies a special state of the selested element</p>
+        <div class="psudo-1">
+       pseudo:- Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+         Natus nihil nam distinctio sit neque saepe esse doloremque <br>
+          aut reiciendis, iste incidunt commodi, vel laudantium maiores <br>
+           dignissimos architecto aspernatur magnam illum.
+        </div>
+</body>
+</html>
