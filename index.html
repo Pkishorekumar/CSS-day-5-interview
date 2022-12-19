@@ -45,6 +45,37 @@
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      color: darkgoldenrod;
 }
+        .one{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    margin-left: 50px;    
+}
+.one:hover{
+    width: 250px;
+   background-color: black;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    animation-name: two;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-left: 50px;
+}
+@keyframes two {
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
     </style>
 </head>
 <body>
@@ -56,17 +87,19 @@
         transition-timing-function: linear;
         transition-property: all;   
         </pre>
+    <div class="one"></div>
 
 
         <h3>Show implementation of transformation</h3>
         <pre>
         transform: rotate(360deg);
         transform: scale(1.5);
-        transform: skewX(250px);
-        transform: skewY(250px);
+        transform: skewX(30deg);
+        transform: skewY(20deg);
         transform: translateX(1400px);
         transform: translateY(250px);
     </pre>
+    <div class="two"></div>
 
     <h3>Show implementation of grid</h3>
     <div class="gridbox">
